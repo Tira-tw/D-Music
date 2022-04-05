@@ -8,14 +8,14 @@ from pretty_help import PrettyHelp
 owners = [848164182334898216]
 activity = discord.Activity(type=discord.ActivityType.playing, name="打上D!help可以獲得所有指令")
 bot = commands.Bot(command_prefix="D!", activity=activity, owner_ids = set(owners), intents=Intents.all())
-ending_note = "使用 D!help 來顯示這個訊息\n這是一個幫助訊息，能列出所有指令，好讓你能輕鬆自在的使用這個機器人"
+ending_note = "`D!help`是一個好康的東西,還可以讓你登大人喔xD"
 bot.help_command = PrettyHelp(color=0xffffff, ending_note=ending_note)
 
 @bot.event
 #當機器人完成啟動時
 async def on_ready():
 	print('> 目前登入身分：', bot.user)
-	print('> bot is online')
+	print(bot.user,'已上線')
 @bot.command()
 async def load(ctx, extension):
   """開發者專用"""
@@ -24,7 +24,7 @@ async def load(ctx, extension):
 	  bot.load_extension(f'cogs.{extension}')
 	  await ctx.send(f'載入{extension}完成')
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("您沒有開發者權限使用該指令")
 
 @bot.command()
 async def unload(ctx, extension):
@@ -34,7 +34,7 @@ async def unload(ctx, extension):
 	  bot.unload_extension(f'cogs.{extension}')
 	  await ctx.send(f'卸載{extension}完成')
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("您沒有開發者權限使用該指令")
 
 @bot.command()
 async def reload(ctx, extension):
@@ -44,7 +44,7 @@ async def reload(ctx, extension):
 	  bot.reload_extension(f'cogs.{extension}')
 	  await ctx.send(f'重新載入{extension}完成')
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("您沒有開發者權限使用該指令")
 
 @bot.command()
 async def reloadall(ctx):
@@ -57,7 +57,7 @@ async def reloadall(ctx):
         bot.reload_extension(f"cogs.{name}")
     await ctx.send("重新載入成功")
   else:
-    await ctx.send("你好像沒有權限使用這個指令欸你卻定你是開發者嗎?")
+    await ctx.send("您沒有開發者權限使用該指令")
 
 for Filename in os.listdir('./cogs'):
 	if Filename.endswith('.py'):

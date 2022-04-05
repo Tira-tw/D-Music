@@ -308,7 +308,7 @@ class Music(commands.Cog):
 
     @commands.command()
     @commands.guild_only()
-    async def musicinfo(self, ctx):
+    async def info(self, ctx):
         """機器人資訊及重要訊息公告"""
         embed = discord.Embed(title="D-Music info")
         embed.add_field(name="版本", value="v1.0", inline=True)
