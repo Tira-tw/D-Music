@@ -32,3 +32,8 @@ webter : https://webter.cf/
 <img src="https://cdn.discordapp.com/attachments/960721710565445722/960779044507488296/97395196_p0_master1200.jpg"></div>
 <hr>
   
+
+
+## copyright
+- 原作者 : [tooty-1135](https://github.com/tooty-1135)
+- 超爛的協助者(x : [webTer](https://webter.cf/) : [Tira-tw](https://github.com/Tira-tw)
