@@ -316,6 +316,7 @@ class Music(commands.Cog):
         embed.add_field(name="Support:", value="[Support](https://discord.gg/u4t5D7MpAx)", inline=True)
         embed.add_field(name="製作者", value="幻月貓#1314", inline=True)
         embed.add_field(name="開發團隊的所有成員", value="[WebTer Team](https://webter.cf)", inline=True)
+        embed.add_field(name="源代碼", value="[D-Music](https://github.com/Tira-tw/D-Music)", inline=True)
             
         await ctx.send(embed=embed)
             
