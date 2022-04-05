@@ -1,6 +1,6 @@
 <h1 align="center">D-Music bot</h1>
 <div align="center">
-<p align="center">這是一個音樂bot , 擁有3x指令!</p>
+<p align="center">這是一個音樂bot , 擁有7x指令!</p>
 <hr>
 <img src="https://cdn.discordapp.com/attachments/960721710565445722/960838596150046720/D-logo.jpg"></div>
 <hr>
