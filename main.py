@@ -6,7 +6,7 @@ from discord.ext import commands
 from pretty_help import PrettyHelp
 
 owners = [848164182334898216]
-activity = discord.Activity(type=discord.ActivityType.playing, name="打上D!help可以獲得所有指令")
+activity = discord.Activity(type=discord.ActivityType.playing, name="D!help")
 bot = commands.Bot(command_prefix="D!", activity=activity, owner_ids = set(owners), intents=Intents.all())
 ending_note = "`D!help`是一個好康的東西,還可以讓你登大人喔xD"
 bot.help_command = PrettyHelp(color=0xffffff, ending_note=ending_note)
