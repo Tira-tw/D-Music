@@ -33,6 +33,10 @@ webter : https://webter.cf/
 <hr>
   
 
+## bot invite
+- bot invite : [D-Music](https://discord.com/oauth2/authorize?client_id=960725182593531944&permissions=37080128&scope=bot)
+
+
 
 ## copyright
 - 原作者 : [tooty-1135](https://github.com/tooty-1135)
